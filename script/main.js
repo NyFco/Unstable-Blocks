@@ -8,8 +8,9 @@ for (let i = 0; i < blocksAmount; i++) {
     changer(block);
     block.classList.add("visible");
     listItems[i].addEventListener('mouseenter', () => {
-        changer(listItems[i]);
-    })
+            changer(listItems[i]);
+        })
+        // listItems[0].style.width = 
 }
 
 
@@ -34,6 +35,6 @@ function changer(el) {
     el.style.backgroundColor = colorGen();
     el.style.top = position("TOP");
     el.style.left = position("LEFT");
-    el.style.width = randNumGen(100, 600);
-    el.style.height = randNumGen(100, 600);
+    el.style.width = `${randNumGen(100, 400)}px`;
+    el.style.height = `${randNumGen(100, 400)}px`;
 }
