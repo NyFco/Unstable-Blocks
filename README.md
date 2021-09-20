@@ -1,4 +1,4 @@
 ### Unstable-Blocks
-Some crazy blocks which can never be achieved.
+Random amount of blocks with random colors, random sizes in random positions.
 
-### <h1 align=center>Not Finished!</h1>
+Each block's position, color and size gets changed in random by hovering the cursor on it.
