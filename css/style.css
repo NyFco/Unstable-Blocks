@@ -1,0 +1,19 @@
+body {
+    position: relative;
+    background-color: #ccc;
+    z-index: 10;
+}
+
+.block {
+    position: absolute;
+    list-style-type: none;
+    width: 400px;
+    height: 75px;
+    display: none;
+    z-index: 100;
+}
+
+.visible {
+    display: block;
+    transition: all ease 1s;
+}
