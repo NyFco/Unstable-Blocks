@@ -8,9 +8,8 @@ for (let i = 0; i < blocksAmount; i++) {
     changer(block);
     block.classList.add("visible");
     listItems[i].addEventListener('mouseenter', () => {
-            changer(listItems[i]);
-        })
-        // listItems[0].style.width = 
+        changer(listItems[i]);
+    })
 }
 
 
