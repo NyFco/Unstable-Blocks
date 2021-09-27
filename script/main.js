@@ -9,6 +9,11 @@ for (let i = 0; i < blocksAmount; i++) {
     block.classList.add("visible");
     listItems[i].addEventListener('mouseenter', () => {
         changer(listItems[i]);
+    });
+    listItems[i].addEventListener('click', () => {
+        setTimeout(() => {
+            block.classList.remove("visible");
+        }, 300 /*MS*/ );
     })
 }
 
