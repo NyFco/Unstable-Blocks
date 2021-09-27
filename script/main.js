@@ -51,5 +51,5 @@ function changer(el) {
     el.style.top = position("TOP");
     el.style.left = position("LEFT");
     el.style.width = `${randNumGen(100, 400)}px`;
-    el.style.height = `${randNumGen(100, 400)}px`
+    el.style.height = `${randNumGen(100, 400)}px`;
 }
