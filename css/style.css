@@ -11,7 +11,32 @@ body {
     z-index: 100;
 }
 
+.block:hover {
+    cursor: pointer;
+}
+
 .visible {
     display: block;
-    transition: all ease 1s;
+    transition: all ease 0.75s;
+}
+
+#blcCounter {
+    position: fixed;
+    top: 30px;
+    left: 50vw;
+    z-index: 12000;
+    transform: translate(-50%, 0);
+    background-color: #444;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    font-size: 17px;
+    color: #ccc;
+    border-radius: 25px;
+    border: solid red 5px;
+}
+
+#counterValue {
+    color: #eee;
+    font-size: 35px;
 }

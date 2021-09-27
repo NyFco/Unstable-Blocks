@@ -2,21 +2,33 @@ let blocksAmount = randNumGen(1, 20);
 
 const ul = document.querySelector("#list");
 const listItems = document.querySelectorAll("li");
+const counterValue = document.querySelector("#counterValue");
+
+let text = document.createTextNode(blocksAmount);
 
 for (let i = 0; i < blocksAmount; i++) {
     const block = listItems[i];
     changer(block);
-    block.classList.add("visible");
-    listItems[i].addEventListener('mouseenter', () => {
+    block.classList.add("visible", "test");
+    listItems[i].addEventListener("mouseenter", () => {
         changer(listItems[i]);
     });
-    listItems[i].addEventListener('click', () => {
+    counterValue.appendChild(text);
+    listItems[i].addEventListener("click", () => {
         setTimeout(() => {
             block.classList.remove("visible");
         }, 300 /*MS*/ );
-    })
+        console.log(block.classList.contains("test"));
+        if (block.classList.contains("test")) {
+            blocksAmount--;
+            const text2 = document.createTextNode(blocksAmount);
+            counterValue.removeChild(text);
+            counterValue.appendChild(text2);
+            text = text2;
+        }
+        block.classList.remove("test");
+    });
 }
-
 
 // Functions
 
