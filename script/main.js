@@ -18,7 +18,6 @@ for (let i = 0; i < blocksAmount; i++) {
         setTimeout(() => {
             block.classList.remove("visible");
         }, 300 /*MS*/ );
-        console.log(block.classList.contains("test"));
         if (block.classList.contains("test")) {
             blocksAmount--;
             const text2 = document.createTextNode(blocksAmount);
