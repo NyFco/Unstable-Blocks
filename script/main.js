@@ -17,7 +17,11 @@ for (let i = 0; i < blocksAmount; i++) {
     listItems[i].addEventListener("click", () => {
         setTimeout(() => {
             block.classList.remove("visible");
+            setTimeout(() => {
+                if (blocksAmount === 0) alert("You Won!");
+            }, 100);
         }, 300 /*MS*/ );
+        console.log(block.classList.contains("test"));
         if (block.classList.contains("test")) {
             blocksAmount--;
             const text2 = document.createTextNode(blocksAmount);
