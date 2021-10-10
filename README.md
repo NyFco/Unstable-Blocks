@@ -8,4 +8,4 @@ Take a look:
 [Link](https://unstable-blocks.netlify.app)
 
 ## Sep 27 2021 Update:<br>
-Each block will pop by clicks on it and counter added.
+Each block will pop by clicks on it<br>counter added.
